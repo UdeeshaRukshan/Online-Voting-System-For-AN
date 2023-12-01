@@ -36,218 +36,108 @@ localStorage.setItem('ccResult',ccResult);
 
 
 
+function movies(whichone) {
+    if (whichone == 'mm1') {
+        if (movie1 == 2) {
+            disableButtons('btnOne-1', 'btnTwo-2', 'btnThree-3', 'btnFour-4', 'btnFive-5');
+            alert('Movie Vote exceed!');
+        }
 
-function movies(whichone){
-    if(whichone=='mm1'){
-    if(movie1==2){
-        document.getElementById("btnOne-1").disabled = true;
-        document.getElementById("btnTwo-2").disabled = true;
-        document.getElementById("btnThree-3").disabled = true;
-        document.getElementById("btnFour-4").disabled = true;
-        document.getElementById("btnFive-5").disabled = true;
-        alert("Movie Vote exceed!");
-        
-    }
-    
-    ++movie1;
-}
-    else if(whichone=='mm2'){
-        if(movie2==2){
-            document.getElementById("btnOne-1").disabled = true;
-            document.getElementById("btnTwo-2").disabled = true;
-            document.getElementById("btnThree-3").disabled = true;
-            document.getElementById("btnFour-4").disabled = true;
-            document.getElementById("btnFive-5").disabled = true;
-            alert("Movie Vote exceed!");
+        ++movie1;
+    } else if (whichone == 'mm2') {
+        if (movie2 == 2) {
+            disableButtons('btnOne-1', 'btnTwo-2', 'btnThree-3', 'btnFour-4', 'btnFive-5');
+            alert('Movie Vote exceed!');
         }
         ++movie2;
-       
-
-    }
-    else if(whichone=='mm3'){
-        if(movie3==2){
-            document.getElementById("btnOne-1").disabled = true;
-            document.getElementById("btnTwo-2").disabled = true;
-            document.getElementById("btnThree-3").disabled = true;
-            document.getElementById("btnFour-4").disabled = true;
-            document.getElementById("btnFive-5").disabled = true;
-            alert("Movie Vote exceed!");
+    } else if (whichone == 'mm3') {
+        if (movie3 == 2) {
+            disableButtons('btnOne-1', 'btnTwo-2', 'btnThree-3', 'btnFour-4', 'btnFive-5');
+            alert('Movie Vote exceed!');
         }
         ++movie3;
-
-    }
-    else if(whichone=='mm4'){
-        if(movie4==2){
-            document.getElementById("btnOne-1").disabled = true;
-            document.getElementById("btnTwo-2").disabled = true;
-            document.getElementById("btnThree-3").disabled = true;
-            document.getElementById("btnFour-4").disabled = true;
-            document.getElementById("btnFive-5").disabled = true;
-            alert("Movie Vote exceed!");
-           
+    } else if (whichone == 'mm4') {
+        if (movie4 == 2) {
+            disableButtons('btnOne-1', 'btnTwo-2', 'btnThree-3', 'btnFour-4', 'btnFive-5');
+            alert('Movie Vote exceed!');
         }
         ++movie4;
-
-    }
-    else if(whichone=='mm5'){
-        if(movie5==2){
-            document.getElementById("btnOne-1").disabled = true;
-            document.getElementById("btnTwo-2").disabled = true;
-            document.getElementById("btnThree-3").disabled = true;
-            document.getElementById("btnFour-4").disabled = true;
-            document.getElementById("btnFive-5").disabled = true;
-            alert("Movie Vote exceed!");
+    } else if (whichone == 'mm5') {
+        if (movie5 == 2) {
+            disableButtons('btnOne-1', 'btnTwo-2', 'btnThree-3', 'btnFour-4', 'btnFive-5');
+            alert('Movie Vote exceed!');
         }
-       ++movie5;
-
+        ++movie5;
     }
-   
-    
+}
 
-};
-
-function creator(whichone){
-    if(whichone=='c1'){
-        if(creator1==2){
-            document.getElementById("cc-btnOne").disabled = true;
-            document.getElementById("cc-btnTwo").disabled = true;
-            document.getElementById("cc-btnThree").disabled = true;
-            document.getElementById("cc-btnFour").disabled = true;
-            document.getElementById("cc-btnFive").disabled = true;
-            alert("Content creator's Vote exceed!");
-           
+function creator(whichone) {
+    if (whichone == 'c1') {
+        if (creator1 == 2) {
+            disableButtons('cc-btnOne', 'cc-btnTwo', 'cc-btnThree', 'cc-btnFour', 'cc-btnFive');
+            alert('Content creator\'s Vote exceed!');
         }
         ++creator1;
-    }
-    
-
-    else if(whichone=='c2'){
-        if(creator2==2){
-            document.getElementById("cc-btnOne").disabled = true;
-            document.getElementById("cc-btnTwo").disabled = true;
-            document.getElementById("cc-btnThree").disabled = true;
-            document.getElementById("cc-btnFour").disabled = true;
-            document.getElementById("cc-btnFive").disabled = true;
-            alert("Content creator's Vote exceed!");
-           
+    } else if (whichone == 'c2') {
+        if (creator2 == 2) {
+            disableButtons('cc-btnOne', 'cc-btnTwo', 'cc-btnThree', 'cc-btnFour', 'cc-btnFive');
+            alert('Content creator\'s Vote exceed!');
         }
         ++creator2;
-
-    }
-    else if(whichone=='c3'){
-        if(creator3==2){
-            document.getElementById("cc-btnOne").disabled = true;
-            document.getElementById("cc-btnTwo").disabled = true;
-            document.getElementById("cc-btnThree").disabled = true;
-            document.getElementById("cc-btnFour").disabled = true;
-            document.getElementById("cc-btnFive").disabled = true;
-            alert("Content creator's Vote exceed!");
-           
+    } else if (whichone == 'c3') {
+        if (creator3 == 2) {
+            disableButtons('cc-btnOne', 'cc-btnTwo', 'cc-btnThree', 'cc-btnFour', 'cc-btnFive');
+            alert('Content creator\'s Vote exceed!');
         }
         ++creator3;
-
-    }
-    else if(whichone=='c4'){
-        if(creator4==2){
-            document.getElementById("cc-btnOne").disabled = true;
-            document.getElementById("cc-btnTwo").disabled = true;
-            document.getElementById("cc-btnThree").disabled = true;
-            document.getElementById("cc-btnFour").disabled = true;
-            document.getElementById("cc-btnFive").disabled = true;
-            alert("Content creator's Vote exceed!");
-           
+    } else if (whichone == 'c4') {
+        if (creator4 == 2) {
+            disableButtons('cc-btnOne', 'cc-btnTwo', 'cc-btnThree', 'cc-btnFour', 'cc-btnFive');
+            alert('Content creator\'s Vote exceed!');
         }
         ++creator4;
-
-    }
-    else if(whichone=='c5'){
-        if(creator5==2){
-            document.getElementById("cc-btnOne").disabled = true;
-            document.getElementById("cc-btnTwo").disabled = true;
-            document.getElementById("cc-btnThree").disabled = true;
-            document.getElementById("cc-btnFour").disabled = true;
-            document.getElementById("cc-btnFive").disabled = true;
-            alert("Content creator's Vote exceed!");
-           
+    } else if (whichone == 'c5') {
+        if (creator5 == 2) {
+            disableButtons('cc-btnOne', 'cc-btnTwo', 'cc-btnThree', 'cc-btnFour', 'cc-btnFive');
+            alert('Content creator\'s Vote exceed!');
         }
         ++creator5;
-
     }
-};
+}
 
-function music(whichone){
-    if(whichone=='m1'){
-        if(music1==2){
-            document.getElementById("m-btnOne").disabled = true;
-            document.getElementById("m-btnOne").disabled = true;
-            document.getElementById("m-btnTwo").disabled = true;
-            document.getElementById("m-btnThree").disabled = true;
-            document.getElementById("m-btnFour").disabled = true;
-            document.getElementById("m-btnFive").disabled = true;
-            alert("Music Vote exceed!");
-           
+function music(whichone) {
+    if (whichone == 'm1') {
+        if (music1 == 2) {
+            disableButtons('m-btnOne', 'm-btnTwo', 'm-btnThree', 'm-btnFour', 'm-btnFive');
+            alert('Music Vote exceed!');
         }
         ++music1;
-    }
-    else if(whichone=='m2'){
-        if(music2==2){
-            document.getElementById("m-btnOne").disabled = true;
-            document.getElementById("m-btnOne").disabled = true;
-            document.getElementById("m-btnTwo").disabled = true;
-            document.getElementById("m-btnThree").disabled = true;
-            document.getElementById("m-btnFour").disabled = true;
-            document.getElementById("m-btnFive").disabled = true;
-            alert("Music Vote exceed!");
-           
+    } else if (whichone == 'm2') {
+        if (music2 == 2) {
+            disableButtons('m-btnOne', 'm-btnTwo', 'm-btnThree', 'm-btnFour', 'm-btnFive');
+            alert('Music Vote exceed!');
         }
         ++music2;
-
-    }
-    else if(whichone=='m3'){
-        if(music3==2){
-            document.getElementById("m-btnOne").disabled = true;
-            document.getElementById("m-btnOne").disabled = true;
-            document.getElementById("m-btnTwo").disabled = true;
-            document.getElementById("m-btnThree").disabled = true;
-            document.getElementById("m-btnFour").disabled = true;
-            document.getElementById("m-btnFive").disabled = true;
-            alert("Music Vote exceed!");
-           
+    } else if (whichone == 'm3') {
+        if (music3 == 2) {
+            disableButtons('m-btnOne', 'm-btnTwo', 'm-btnThree', 'm-btnFour', 'm-btnFive');
+            alert('Music Vote exceed!');
         }
         ++music3;
-
-    }
-    else if(whichone=='m4'){
-        if(music4==2){
-            document.getElementById("m-btnOne").disabled = true;
-            document.getElementById("m-btnOne").disabled = true;
-            document.getElementById("m-btnTwo").disabled = true;
-            document.getElementById("m-btnThree").disabled = true;
-            document.getElementById("m-btnFour").disabled = true;
-            document.getElementById("m-btnFive").disabled = true;
-            alert("Music Vote exceed!");
-           
+    } else if (whichone == 'm4') {
+        if (music4 == 2) {
+            disableButtons('m-btnOne', 'm-btnTwo', 'm-btnThree', 'm-btnFour', 'm-btnFive');
+            alert('Music Vote exceed!');
         }
         ++music4;
-
-    }
-    else if(whichone=='m5'){
-        if(music5==2){
-            document.getElementById("m-btnOne").disabled = true;
-            document.getElementById("m-btnOne").disabled = true;
-            document.getElementById("m-btnTwo").disabled = true;
-            document.getElementById("m-btnThree").disabled = true;
-            document.getElementById("m-btnFour").disabled = true;
-            document.getElementById("m-btnFive").disabled = true;
-            alert("Music Vote exceed!");
-           
+    } else if (whichone == 'm5') {
+        if (music5 == 2) {
+            disableButtons('m-btnOne', 'm-btnTwo', 'm-btnThree', 'm-btnFour', 'm-btnFive');
+            alert('Music Vote exceed!');
         }
         ++music5;
-
     }
-   
-};
-
+}
 
 function tvseries(whichone){
     if(whichone=='v1'){

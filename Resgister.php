@@ -39,7 +39,7 @@
                 </div>
                 <div class="input-box">
                     <span class = "details">Phone number</span>
-                    <input type ="tel" id ="phoneNumber" name ="phoneNumber" placeholder = "Enter your Phone number" pattern="[0-9]{10}" required>
+                    <input type ="tel" id ="phoneNumber" name ="phone" placeholder = "Enter your Phone number" pattern="[0-9]{10}" required>
                     <p class="error-text">Phone number is required</p>
                 </div>
                 <div class="gender-details">
@@ -89,7 +89,7 @@
      
     
 
-     $con=new mysqli("localhost","root","","registration");
+     $con=new mysqli("localhost","root","","OVAN");
      if($con->connection_error){
          die("Connection failed:".$con->connection_error);
      }
@@ -98,14 +98,14 @@
         $username = $_POST['username'];
         $occupation = $_POST['occupation'];
         $email = $_POST['email'];
-        $phone = $_POST['phoneNumber'];
+        $phone = $_POST['phone'];
         $gender = $_POST['gender'];
         $password =$_POST['password'];
         $dob = $_POST['dob'];
 
         if(isset($_POST['submit'])){
             
-            $query = "INSERT INTO user VALUES ('$fullname','$username','$occupation','$email','$phone','$password','$gender','$dob')";
+            $query = "INSERT INTO user VALUES ('$fullname','$username','$occupation','$email','$phone','$gender','$password','$dob')";
 
             mysqli_query($con,$query);
 
