@@ -19,7 +19,7 @@
         <div class = "user-details">
             <div class = "input-box">
                 <span class = "details">Username</span>
-                <input type ="text" name ="UEmail" placeholder="Username" required>
+                <input type ="text" name ="username" placeholder="Username" required>
             </div> 
             <div class = "input-box">   
             <span class = "details">Password</span>  
@@ -43,14 +43,15 @@
 </body>
 </html>
 <?php
-   $con=new mysqli("localhost","root","","registration")or die("Connection error");
+   $con=new mysqli("localhost","root","","OVAN")or die("Connection error");
             
-   $username=$_POST['UEmail'];
+   $username=$_POST['username'];
    $password=$_POST['PasswordL'];
 
-   $sql="SELECT * FROM user WHERE E_mail='$username' and Password='$password'";
+   $sql="SELECT * FROM user WHERE username='$username' and password='$password'";
    $result=mysqli_query($con,$sql);
    $count =mysqli_num_rows($result);
+   
    if($count>0){
        
        header("Location: /OVAN/indexN.php");
@@ -63,4 +64,16 @@
 
    $con->close();
 
+?>
+
+<?php
+$cookie_name = "user";
+$cookie_value = $username;
+setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/"); // 86400 = 1 day
+if(!isset($_COOKIE[$cookie_name])) {
+    echo "Cookie named '" . $cookie_name . "' is not set!";
+  } else {
+    echo "Cookie '" . $cookie_name . "' is set!<br>";
+    echo "Value is: " . $_COOKIE[$cookie_name];
+  }
 ?>

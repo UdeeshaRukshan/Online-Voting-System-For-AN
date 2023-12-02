@@ -45,10 +45,18 @@
       </li>
      
     </li>
-     
-     <a href="/OVAN/login.php" id="logo1">
-      Login/sign up
-     </a>
+    </li>
+<?php
+  if (isset($_COOKIE[$cookie_name])) {
+    $value = "/OVAN/indexN.php";
+  } else {
+    $value = "/OVAN/login.php";
+  }
+?>
+<a href="<?php echo $value; ?>" id="logo1">
+  Login/sign up
+</a>
+
   </ul>
 </header>
   <div class="slider">
@@ -139,8 +147,7 @@
     <img class="berkishhathway" src="/OVAN/images/berkishhathaway.webp">
     <img class="redbull" src="/OVAN/images/redbull.png">
   </div>
-   <!--Section end-->
-<!--footer start-->
+
 <footer>
 
   <div class="information">
